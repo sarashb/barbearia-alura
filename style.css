@@ -1,12 +1,21 @@
-body {
-    background-color: #CCCCCC;
-}
+/* body {
+
+} */
 
 #banner {
     width: 100%;
 }
 
-h1 {
+.principal {
+  background-color: #CCCCCC;
+  padding: 30px;
+}
+
+.titulo-principal {
+  padding-left: 20px;
+}
+
+.titulo-centralizado {
   text-align: center;
 }
 
@@ -20,5 +29,25 @@ p {
 }
 
 em strong {
-  color: #FF0000;
+  color: #435ba8;
+}
+
+.beneficios {
+  background: #FFFFFF;
+  padding: 20px;
+}
+
+.imgbeneficios {
+  width: 50%;
+}
+
+ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin-right: 15%;
+}
+
+.items {
+  font-style: italic;
 }
