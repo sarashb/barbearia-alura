@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    background: #BBBBBB;
+    background: #Bedce3;
     padding: 20px 0;
 }
 
@@ -26,7 +26,7 @@ nav li {
 
 nav a {
     text-transform: uppercase;
-    color: #000000;
+    color: #545454;
     font-weight: bold;
     font-size: 22px;
     font-family:'Poppins', sans-serif;
@@ -34,9 +34,9 @@ nav a {
 }
 
  nav a:hover {
-     color: whitesmoke;
-     transition: 0.2s;
-     /* text-decoration: underline; */
+     color: #FEFEFE;
+     transition: 0.3s;
+     font-size: 24px;
  }
 
 .produtos {
@@ -98,12 +98,8 @@ footer {
     font-size: 13px
 }
 
-/* main {
- 
-} */
-
 form {
-    margin: 40px 0;
+    margin: 25px 50px;
 }
 
 form label, form legend {
@@ -135,6 +131,7 @@ form label, form legend {
     border-radius: 5px;
     transition: 1s all;
     cursor: pointer;
+    text-align: center;
 }
 
 .enviar:hover {
@@ -143,7 +140,7 @@ form label, form legend {
 }
 
 table {
-    margin: 20px 0 40px;
+    margin: 15px 50px;;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -253,33 +250,88 @@ td, th {
     margin: 1em auto;
 }
 
-/* index */
-@media screen and (max-width: 480px) {
-    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
-        width: auto;
-    }
+/*Configurando para o site ser responsivo*/
 
-    h1 {
+@media screen and (max-width: 840px){
+
+    .caixa, .principal, .mapa-conteudo, .conteudo-beneficios, .video {     
+        width: auto;
+        position: static;
+    }
+    
+    .caixa{
+        text-align: center;
+    }
+    
+    .mapa-conteudo {
+        padding: 0 10px;
+    }
+    
+    .video{
+        padding: 0px 15px;
+    }
+    
+    .banner{
+        position: center
+    }
+    
+    .imagem-beneficios{
+        width: 80%;
+    }
+    nav{
+        position: static;
+    }
+    .conteudo-beneficios{
+        padding: 10px 10px;
+        text-align: center;
+    }
+    
+/*Responsividade tela produtos*/
+
+    .produtos {
+        width: 100%;
         text-align: center;
     }
 
-    nav {
-        position: static;
+    .produtos ul {
+        width: 90%;
     }
 
-    .lista-beneficios, .img-beneficios {
-        width: 100%;
-    }
-}
-
-/* parte de contato */
-@media screen and (max-width: 480px) {
-    form, table {
-        padding-left: 15px;
+    .produtos li {
+        width: 80%;
+        margin: 10px 1%;
     }
 
+    .img-menor {
+        width: 80%;
+    }
+
+/*Responsividade para tela de Contato*/
+
+    textarea {
+        width: 40%;
+        height: 60px;
+    }
+
+    .input-padrao, form {
+        text-align: center;
+        margin: auto;
+        text-align: center;
+        padding:px
+    }
     .enviar {
-        width: 50%;
+        margin-bottom: 25px;
+        width: 60%;
     }
-}
+    form label, form legend {
 
+        margin: 10px auto 0px auto;
+    }
+
+    table {
+        margin: auto;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+}
